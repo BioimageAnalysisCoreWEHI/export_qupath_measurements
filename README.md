@@ -11,7 +11,7 @@ Nextflow pipeline for exporting image measurements from QuPath projects in headl
 ## Required inputs
 
 - `--project`: Path to QuPath `.qpproj` file.
-- `--qupath_bin`: Path to QuPath executable (for example `/vast/projects/SOLACE2/QuPath/bin/QuPath`).
+- `--qupath_bin`: Path to QuPath executable (for example `/vast/projects/project_name/QuPath/bin/QuPath`).
 
 Optional:
 
@@ -25,7 +25,7 @@ Local/interactive run:
 ```bash
 nextflow run main.nf \
 	--project /path/to/project.qpproj \
-	--qupath_bin /vast/projects/SOLACE2/QuPath/bin/QuPath \
+	--qupath_bin /vast/projects/project_name/QuPath/bin/QuPath \
 	--outdir /path/to/output
 ```
 
