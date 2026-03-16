@@ -1,0 +1,19 @@
+# Nextflow runtime
+.nextflow*
+work/
+
+# Pipeline outputs
+results/
+
+# Logs
+*.log
+*.trace
+
+# Python/Groovy cache
+__pycache__/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
