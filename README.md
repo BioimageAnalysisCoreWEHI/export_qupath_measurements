@@ -16,6 +16,7 @@ Nextflow pipeline for exporting image measurements from QuPath projects in headl
 Optional:
 
 - `--script`: Path to Groovy export script (default: `bin/export_image_measurements_indiv.groovy`).
+	Relative paths are resolved from the pipeline directory.
 - `--outdir`: Output directory (default: `results`).
 
 ## Usage
