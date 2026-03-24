@@ -11,10 +11,10 @@ Nextflow pipeline for exporting image measurements from QuPath projects in headl
 ## Required inputs
 
 - `--project`: Path to QuPath `.qpproj` file.
-- `--qupath_bin`: Path to QuPath executable (for example `/vast/projects/project_name/QuPath/bin/QuPath`).
 
 Optional:
 
+- `--qupath_bin`: Path to QuPath executable (default: `/stornext/System/data/software/rhel/9/base/tools/QuPath/0.6.0/bin/QuPath`).
 - `--script`: Path to Groovy export script (default: `bin/export_image_measurements_indiv.groovy`).
 	Relative paths are resolved from the pipeline directory.
 - `--outdir`: Output directory (default: `results`).
@@ -26,7 +26,7 @@ Local/interactive run:
 ```bash
 nextflow run main.nf \
 	--project /path/to/project.qpproj \
-	--qupath_bin /vast/projects/project_name/QuPath/bin/QuPath \
+	--qupath_bin /stornext/System/data/software/rhel/9/base/tools/QuPath/0.6.0/bin/QuPath \
 	--outdir /path/to/output
 ```
 
@@ -36,7 +36,7 @@ HPC run with Singularity + medium resources:
 nextflow run main.nf \
 	-profile singularity,medium \
 	--project /path/to/project.qpproj \
-	--qupath_bin /vast/projects/SOLACE2/QuPath/bin/QuPath \
+	--qupath_bin /stornext/System/data/software/rhel/9/base/tools/QuPath/0.6.0/bin/QuPath \
 	--outdir /path/to/output
 ```
 
